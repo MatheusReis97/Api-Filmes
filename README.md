@@ -4,4 +4,4 @@ Projeto consumindo API The Movie DB utilizando a linguagem PHP,  construindo um 
 
 Foi utilizado para criação do projeto:
 
-HTML, CSS, PHP, API MOVIEDB.
+HTML, CSS, BOOTSTRAP, PHP, API ( THE MOVIE  DATABASE).
