@@ -1,55 +1,52 @@
- <?php
-
-include_once('conf.php');
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2TEU FILMES</title>
-  <link rel="stylesheet" type="text/css" href="estilos/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-  <nav class="navbar navbar-warning bg-warning">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="home.php">
         <img src="imagens/logo.png" alt="Logo" style="width:25%">
-        2TEU - FILMES
+        FILMOTECA
       </a>
       <form class="d-flex" method="post">
         <input class="form-control me-2" id="pesquisa" name="pesquisa" type="search" placeholder="Procure aqui" aria-label="Procure aqui">
         <button class="btn btn-outline-danger" style="background-color:red; color:white" type="submit">Buscar</button>
       </form>
     </div>
-  </nav><br>
+  </nav>
+  <br>
 
-  <div class="container" style="text-align: center">
-    <h2>Filmes</h2>
-    <h4>Os grandes sucessos você encontra aqui!</h4>
+  <div class="container chamadinha" style="text-align: center">
+    <h1>FILMOTECA</h1>
+    <h4>Os grandes sucessos encontram-se aqui!</h4>
     <h6>Utilize os modelos de buscar para encontrar os filmes desejados.</h6>
   </div>
 
   <div class="container">
-    <div class="box">
-
-      <img src="imagens/adao555.jpg" class="rounded mx-auto d-block" style="width: 450px;  height:450px ;" alt="...">
-
-
-      <img src="imagens/wakanda2.jpg" class="rounded mx-auto d-block" style="width: 450px;  height:450px ;" alt="...">
-
-      <img src="imagens/lilo.jpg" class="rounded mx-auto d-block" style="width: 450px;  height:450px ;" alt="...">
+  <div class="row imagem-chamada">
+    <div class="col">
+      <img src="https://s2-g1.glbimg.com/k6J0DsMl3_w3evhEsSfoP4348Tg=/0x0:1080x1350/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/4/m/NsJJlvTLCRvEs8KBowrw/deadpool-e-wolverine-cartaz.jpg" alt="">
     </div>
-  </div><br>
+    <div class="col">
+      <img src="https://www.cinesercla.com.br/Uploads/upload/f7693880-e662-4d13-85c1-7a5fef1d42f9.jpeg" alt="">
+    </div>
+    <div class="col">
+     <img src="https://www.claquete.com.br/fotos/filmes/poster/15920_medio.jpg" alt="">
+    </div>
+  </div>
+</div><br>
 
 
   <div class="container">
@@ -92,6 +89,11 @@ include_once('conf.php');
     <div class='row'>
 
       <?php
+      
+
+       include_once('conf/conf.php');
+       
+       
 
       if (isset($_POST['pesquisa'])) {
 
@@ -114,7 +116,7 @@ include_once('conf.php');
 
           foreach ($obj_single->results as $resultado) {
 
-            echo " 
+            return " 
         
 <div class='card' style='width: 25rem; margin:10px;'>
   <img src='https://image.tmdb.org/t/p/original/$resultado->poster_path' class='card-img-top' alt='$resultado->title'>

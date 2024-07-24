@@ -1,0 +1,14 @@
+
+body{
+    background-color: red;
+}
+h1 , .chamadinha{
+    font-family: 'aBstractGroovy', sans-serif;
+    font-size: 3em;
+    color: rgb(39, 0, 75);
+    text-align: center;
+}
+
+.imagem-chamada{
+    background-color: red;
+}

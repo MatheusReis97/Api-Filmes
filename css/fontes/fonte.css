@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'aBstractGroovy';
+    src: url('aAbstractGroovy.ttf') format('truetype'),
+         url('aAbstractGroovy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: gold;
+}
