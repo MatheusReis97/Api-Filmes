@@ -1,14 +1,175 @@
+@font-face {
+    font-family: 'aAbstract';
+    src: url('fontes/aAbstractGroovy.otf') format('OpenType'), url('fontes/aAbstractGroovy.ttf') format('TrueType');
+}
 
 body{
-    background-color: red;
+    background-color:#4b1139;
+    color: #3b4058;
 }
-h1 , .chamadinha{
-    font-family: 'aBstractGroovy', sans-serif;
-    font-size: 3em;
-    color: rgb(39, 0, 75);
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+.navbar-toggler{
+    height: 40px;
+    
+}
+
+
+
+
+
+/* TOPO */
+
+/* Layout para tablets */
+
+
+
+.chamadinha, .navbar-brand{
+    font-family: aAbstract ;
+}
+
+.chamadinha{
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+.chamadinha h1 {
+    font-size: 5em;
+    background-color: rgba(54, 54, 224, 0.808);
+    color: white;
+    
+}
+
+.col{
+    display:flex;
+    justify-content: center;
+}
+
+.pflex{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-chamada img{
+    border: 3px solid black;
+    width: 70%;
+    height: 80%;
+    padding: 0px;
+
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-collapse .custom-margin {
+      margin-top: 20px; /* Ajuste o valor conforme necessário */
+    }
+    
+  }
+
+@media (max-width: 768px) {
+    .chamadinha{
+        margin-top: 15%;
+        font-size: 1.5em;
+    }
+    
+    .chamadinha h1 {
+        font-size: 3em;
+    }
+
+}
+
+/* Layout para smartphones */
+@media (max-width: 480px) {
+    .chamadinha{
+        margin-top: 25%;
+        font-size: 1em;
+    }
+    .chamadinha h1 {
+        font-size: 2em;
+    }
+    
+}
+/* AREA CARDS.   */
+
+/* Layout para tablets */
+@media (max-width: 768px) {
+    .col-4{
+        width: 50% !important;
+    }
+    .imgmodal{
+        width: 40% !important;
+        margin-left: 30%;
+    }
+}
+
+/* Layout para smartphones */
+@media (max-width: 480px) {
+    .col-4{
+        width: 100% !important;
+    }
+    .imgmodal{
+        width: 40% !important;
+        margin-left: 30%;
+    }
+}
+
+.row{
+    margin-top: 2%;
+}
+
+
+.box{
+    color: rgb(0, 0, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.card{
+    height: 38em;
+    margin:10px;
+    border: 5px double black;
+    background-color: #2a6e78;
+}
+
+.card-img-top{
+    width: 55%;
+    display: flex;
+    margin: 1% 25% 1% 25%;
+    border: 4px inset black;
+}
+
+.card-body{
+    font-size: 90%;
+    color: rgb(255, 255, 255);
+    
+}
+
+.flex-grow-1{
+    color: black;
+}
+
+.card-body h5{
+    color: black
+}
+
+.erro-busca{
+    font-size: 1.4em;
+    background-color: black;
+    color: white;
     text-align: center;
 }
 
-.imagem-chamada{
-    background-color: red;
+.img-alternativa{
+    width: 60%;
+    height: 60%;
+    margin-left: 15%;
+    border: none;
 }

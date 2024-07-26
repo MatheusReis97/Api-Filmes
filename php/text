@@ -1,0 +1,19 @@
+array(165) { [0]=> object(stdClass)#45 (14)
+ { ["adult"]=> bool(false)
+  ["backdrop_path"]=> string(32) "/frDS8A5vIP927KYAxTVVKRIbqZw.jpg" 
+  ["genre_ids"]=> array(3)  
+  ["id"]=> int(268) 
+  ["original_language"]=> string(2) "en" 
+  ["original_title"]=> string(6) "Batman" 
+  ["overview"]=> string(267) "Em Gotham City o milionário Bruce Wayne, que quando jovem teve os pais assassinados por bandidos, resolve combater o crime como Batman, o Homem-Morcego. Mas chega o dia em que o vilão Coringa decide dominar a cidade e se torna um grande desafio para o super-herói." 
+  ["popularity"]=> float(80.021) 
+  ["poster_path"]=> string(32) "/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg" 
+  ["release_date"]=> string(10) "1989-06-21" 
+  ["title"]=> string(6) "Batman" 
+  ["video"]=> bool(false) 
+  ["vote_average"]=> float(7.23) 
+  ["vote_count"]=> int(7608) 
+  }
+  } 
+
+  
